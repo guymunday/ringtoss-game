@@ -1,0 +1,20 @@
+{
+  "name": "scc",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.34",
+    "@types/lodash": "^4.14.184",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "phaser": "^3.55.2"
+  }
+}
