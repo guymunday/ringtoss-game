@@ -1,5 +1,5 @@
 import Phaser from "phaser"
-import { SceneKeys, TextureKeys } from "./keys"
+import { AnimationKeys, SceneKeys, TextureKeys } from "./keys"
 import Ring from "./Ring"
 
 export default class Practise extends Phaser.Scene {
@@ -24,23 +24,17 @@ export default class Practise extends Phaser.Scene {
 
     this.attempts = 3
 
-    this.pole = this.physics.add.image(halfWidth, 120, TextureKeys.Pole)
+    this.pole = this.physics.add.sprite(
+      halfWidth,
+      120,
+      TextureKeys.WoodPole,
+      "wood-9.png"
+    )
     this.pole.setScale(0.45)
-    this.pole.body.setSize(60, 60).setOffset(46, 0)
-
-    // TODO: maybe split poles up into their own group and tween them back and forth independently  ✅
-    // Add some sort of power bar to the ring, similar to the hammer hit?
-    // Probably don't need Phaser for the other game, or even a canvas
+    this.pole.body.setSize(60, 60).setOffset(46, 50)
 
     this.rings = this.physics.add.group()
     this.ring = this.spawnRing()
-
-    // this.input.on(Phaser.Input.Events.POINTER_UP, () => {
-    //   this.ring.throw(this.throwDistance)
-    //   if (this.attempts >= 0) {
-    //     this.ring = this.spawnRing()
-    //   }
-    // })
 
     document.addEventListener("pointerup", () => {
       this.ring.throw(this.throwDistance)
@@ -69,12 +63,13 @@ export default class Practise extends Phaser.Scene {
 
   private handleCollide(
     obj1: Phaser.GameObjects.GameObject,
-    _obj2: Phaser.GameObjects.GameObject
+    obj2: Phaser.GameObjects.GameObject
   ) {
-    const ring = obj1 as Phaser.Physics.Arcade.Image
+    const ring = obj2 as Phaser.Physics.Arcade.Image
 
     if (ring.body.velocity.y > -100) {
       ring.body.enable = false
+      this.anims.play(AnimationKeys.WoodPole, obj1)
       this.score += 1
       console.log(this.score)
     }

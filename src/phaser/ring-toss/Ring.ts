@@ -56,18 +56,19 @@ export default class Ring extends Phaser.GameObjects.Container {
     timeline
       .add({
         targets: this.ring,
-        scale: 0.17,
+        scale: 0.2,
         onStart: () => {
           this.arrow.alpha = 0
         },
         onComplete: () => {
           this.scene.throwDistance = 0
+          this.ring.body.enable = false
         },
       })
       .add({
         targets: [this.ring, this.arrow],
         alpha: 0,
-        duration: 200,
+        duration: 0,
         onComplete: () => {
           this.scene.tweens.killTweensOf(this.ring)
         },

@@ -1,5 +1,5 @@
 import Phaser from "phaser"
-import { SceneKeys, TextureKeys } from "./keys"
+import { AnimationKeys, SceneKeys, TextureKeys } from "./keys"
 
 export default class Preloader extends Phaser.Scene {
   constructor() {
@@ -8,7 +8,27 @@ export default class Preloader extends Phaser.Scene {
 
   preload() {
     this.load.image(TextureKeys.Pole, "assets/pole.png")
+    this.load.atlas(
+      TextureKeys.WoodPole,
+      "assets/sprites/wood.png",
+      "assets/sprites/wood.json"
+    )
+
     this.load.image(TextureKeys.Ring, "assets/ring.png")
+  }
+
+  create() {
+    this.anims.create({
+      key: AnimationKeys.WoodPole,
+      frames: this.anims.generateFrameNames(TextureKeys.WoodPole, {
+        start: 3,
+        end: 9,
+        prefix: "wood-",
+        suffix: ".png",
+      }),
+      frameRate: 12,
+      delay: 175,
+    })
   }
 
   update() {

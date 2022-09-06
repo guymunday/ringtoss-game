@@ -1,3 +1,7 @@
+export enum AnimationKeys {
+  WoodPole = "wood-ring",
+}
+
 export enum SceneKeys {
   Preloader = "preloader",
   Practise = "practise",
@@ -8,4 +12,5 @@ export enum SceneKeys {
 export enum TextureKeys {
   Ring = "ring",
   Pole = "pole",
+  WoodPole = "wood-pole",
 }
