@@ -7,7 +7,6 @@ export default class Preloader extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image(TextureKeys.Pole, "assets/pole.png")
     this.load.atlas(
       TextureKeys.WoodPole,
       "assets/sprites/wood.png",

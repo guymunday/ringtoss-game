@@ -6,7 +6,7 @@ import Practise from "./phaser/ring-toss/Practise"
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
   width: 320,
-  height: 320,
+  height: 450,
   parent: "game__wrapper",
   canvas: document.getElementById("game__canvas") as HTMLCanvasElement,
   transparent: true,

@@ -30,8 +30,7 @@ export default class Practise extends Phaser.Scene {
       TextureKeys.WoodPole,
       "wood-9.png"
     )
-    this.pole.setScale(0.45)
-    this.pole.body.setSize(60, 60).setOffset(46, 50)
+    this.pole.body.setSize(30, 30).setOffset(21, 25)
 
     this.rings = this.physics.add.group()
     this.ring = this.spawnRing()

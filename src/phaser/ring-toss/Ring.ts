@@ -26,11 +26,11 @@ export default class Ring extends Phaser.GameObjects.Container {
 
     this.ring = scene.physics.add
       .image(width / 2, height - 35, TextureKeys.Ring)
-      .setScale(0.5, 0.5)
+      .setScale(0.9)
       .setDepth(99)
 
     this.body = this.ring.body as Phaser.Physics.Arcade.Body
-    this.body.setOffset(0, 0).setSize(100, 90)
+    this.body.setOffset(0, 0).setSize(80, 40)
 
     this.moveLeft()
   }
@@ -56,7 +56,7 @@ export default class Ring extends Phaser.GameObjects.Container {
     timeline
       .add({
         targets: this.ring,
-        scale: 0.2,
+        scale: 0.5,
         onStart: () => {
           this.arrow.alpha = 0
         },

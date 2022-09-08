@@ -1,68 +1,84 @@
 {"frames": {
 
-"wood-3.png":
+"wood-1.png":
 {
-	"frame": {"x":0,"y":0,"w":155,"h":370},
+	"frame": {"x":1,"y":1,"w":70,"h":167},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":370},
-	"sourceSize": {"w":155,"h":370}
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+},
+"wood-2.png":
+{
+	"frame": {"x":73,"y":1,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+},
+"wood-3.png":
+{
+	"frame": {"x":145,"y":1,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
 },
 "wood-4.png":
 {
-	"frame": {"x":155,"y":0,"w":155,"h":370},
+	"frame": {"x":1,"y":170,"w":70,"h":167},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":370},
-	"sourceSize": {"w":155,"h":370}
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
 },
 "wood-5.png":
 {
-	"frame": {"x":310,"y":0,"w":155,"h":370},
+	"frame": {"x":73,"y":170,"w":70,"h":167},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":370},
-	"sourceSize": {"w":155,"h":370}
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
 },
 "wood-6.png":
 {
-	"frame": {"x":465,"y":0,"w":155,"h":370},
+	"frame": {"x":145,"y":170,"w":70,"h":167},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":370},
-	"sourceSize": {"w":155,"h":370}
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
 },
 "wood-7.png":
 {
-	"frame": {"x":620,"y":0,"w":155,"h":370},
+	"frame": {"x":1,"y":339,"w":70,"h":167},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":370},
-	"sourceSize": {"w":155,"h":370}
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
 },
 "wood-8.png":
 {
-	"frame": {"x":775,"y":0,"w":155,"h":370},
+	"frame": {"x":73,"y":339,"w":70,"h":167},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":370},
-	"sourceSize": {"w":155,"h":370}
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
 },
 "wood-9.png":
 {
-	"frame": {"x":930,"y":0,"w":155,"h":370},
+	"frame": {"x":145,"y":339,"w":70,"h":167},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":370},
-	"sourceSize": {"w":155,"h":370}
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
 }},
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "wood.png",
+	"image": "wood-compressed.png",
 	"format": "RGBA8888",
-	"size": {"w":1085,"h":370},
+	"size": {"w":216,"h":507},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:ecdf3f483577cb6c1945430bb9be8ddb:f3a8d15ba49eff4995c79449b5542291:f25efcec0d996575d4a89b4a2525a662$"
+	"smartupdate": "$TexturePacker:SmartUpdate:b7439698d9ba0a582b9857b26682b851:b678a9672211b3805d2f29666021f19d:ffe462b502c3c9dad254457919180ace$"
 }
 }

@@ -42,38 +42,38 @@ export default class Game extends Phaser.Scene {
     polesBackArray.forEach((points, i) => {
       const pole = this.polesBack.create(
         polesBackPos[i],
-        60,
+        75,
         TextureKeys.WoodPole,
         "wood-9.png"
       ) as Phaser.Physics.Arcade.Sprite
-      pole.setScale(0.3).setData("points", `${points}`).setVelocityX(30)
-      pole.body.setSize(60, 60).setOffset(46, 50)
+      pole.setScale(0.8).setData("points", `${points}`).setVelocityX(30)
+      pole.body.setSize(30, 30).setOffset(21, 25)
     })
 
     polesMiddleArray.forEach((points, i) => {
       const pole = this.polesMiddle.create(
         polesMiddlePos[i],
-        120,
+        150,
         TextureKeys.WoodPole,
         "wood-9.png"
       ) as Phaser.Physics.Arcade.Sprite
       pole
-        .setScale(0.4)
+        .setScale(0.9)
         .setData("points", `${points}`)
         .setDepth(1)
         .setVelocityX(-20)
-      pole.body.setSize(60, 60).setOffset(46, 50)
+      pole.body.setSize(30, 30).setOffset(21, 25)
     })
 
     polesFrontArray.forEach((points, i) => {
       const pole = this.polesFront.create(
         polesFrontPos[i],
-        180,
+        225,
         TextureKeys.WoodPole,
         "wood-9.png"
       ) as Phaser.Physics.Arcade.Sprite
-      pole.setScale(0.45).setData("points", `${points}`).setDepth(2)
-      pole.body.setSize(60, 60).setOffset(46, 50)
+      pole.setData("points", `${points}`).setDepth(2)
+      pole.body.setSize(30, 30).setOffset(21, 25)
     })
 
     // TODO: loop poles instead of back and forth
@@ -151,7 +151,7 @@ export default class Game extends Phaser.Scene {
     poles.children.entries.forEach((p) => {
       const pole = p as Phaser.Physics.Arcade.Image
       if (pole.x >= 375) {
-        pole.setPosition(-75, 60)
+        pole.setPosition(-75, 75)
       }
     })
   }
@@ -160,7 +160,7 @@ export default class Game extends Phaser.Scene {
     poles.children.entries.forEach((p) => {
       const pole = p as Phaser.Physics.Arcade.Image
       if (pole.x <= -150) {
-        pole.setPosition(450, 120)
+        pole.setPosition(450, 150)
       }
     })
   }
@@ -181,7 +181,7 @@ export default class Game extends Phaser.Scene {
 
     if (this.input.activePointer.isDown) {
       this.ring.stop()
-      this.throwDistance += 7.5
+      this.throwDistance += 15
     }
   }
 }
