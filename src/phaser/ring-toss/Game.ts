@@ -9,7 +9,7 @@ export default class Game extends Phaser.Scene {
 
   private shelfBack!: Phaser.GameObjects.TileSprite
   private shelfMiddle!: Phaser.GameObjects.TileSprite
-  private shelfFront!: Phaser.GameObjects.TileSprite
+  // private shelfFront!: Phaser.GameObjects.TileSprite
 
   private shelfBackPos: number = 0
   private shelfMiddlePos: number = 0
@@ -87,9 +87,8 @@ export default class Game extends Phaser.Scene {
       pole.body.setSize(30, 30).setOffset(21, 25)
     })
 
-    this.shelfFront = this.add
-      .tileSprite(0, 275, 0, 0, TextureKeys.Shelf)
-      .setOrigin(0, 0)
+    //  this.shelfFront =
+    this.add.tileSprite(0, 275, 0, 0, TextureKeys.Shelf).setOrigin(0, 0)
 
     polesFrontArray.forEach((points, i) => {
       const pole = this.polesFront.create(
