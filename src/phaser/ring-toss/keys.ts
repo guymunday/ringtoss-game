@@ -1,5 +1,6 @@
 export enum AnimationKeys {
   WoodPole = "wood-ring",
+  GoldPole = "gold-ring",
 }
 
 export enum SceneKeys {
@@ -10,7 +11,8 @@ export enum SceneKeys {
 }
 
 export enum TextureKeys {
+  Shelf = "shelf",
   Ring = "ring",
-  Pole = "pole",
   WoodPole = "wood-pole",
+  GoldPole = "gold-pole",
 }

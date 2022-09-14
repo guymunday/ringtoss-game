@@ -1,0 +1,84 @@
+{"frames": {
+
+"gold-1.png":
+{
+	"frame": {"x":1,"y":1,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+},
+"gold-2.png":
+{
+	"frame": {"x":73,"y":1,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+},
+"gold-3.png":
+{
+	"frame": {"x":145,"y":1,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+},
+"gold-4.png":
+{
+	"frame": {"x":1,"y":170,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+},
+"gold-5.png":
+{
+	"frame": {"x":73,"y":170,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+},
+"gold-6.png":
+{
+	"frame": {"x":145,"y":170,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+},
+"gold-7.png":
+{
+	"frame": {"x":1,"y":339,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+},
+"gold-8.png":
+{
+	"frame": {"x":73,"y":339,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+},
+"gold-9.png":
+{
+	"frame": {"x":145,"y":339,"w":70,"h":167},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":167},
+	"sourceSize": {"w":70,"h":167}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "wood-compressed.png",
+	"format": "RGBA8888",
+	"size": {"w":216,"h":507},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6b5a5de75088abadde97f1d74d9c5239:56ac5e295a3814dedcfe90ad17a819a8:ffe462b502c3c9dad254457919180ace$"
+}
+}

@@ -83,7 +83,7 @@ export default class Practise extends Phaser.Scene {
 
     if (this.input.activePointer.isDown) {
       this.ring.stop()
-      this.throwDistance += 7.5
+      this.throwDistance += 15
     }
 
     if (this.attempts < 0) {

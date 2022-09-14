@@ -7,13 +7,19 @@ export default class Preloader extends Phaser.Scene {
   }
 
   preload() {
+    this.load.setBaseURL("assets")
+    this.load.image(TextureKeys.Shelf, "shelf.png")
+    this.load.image(TextureKeys.Ring, "ring.png")
     this.load.atlas(
       TextureKeys.WoodPole,
-      "assets/sprites/wood.png",
-      "assets/sprites/wood.json"
+      "sprites/wood.png",
+      "sprites/wood.json"
     )
-
-    this.load.image(TextureKeys.Ring, "assets/ring.png")
+    this.load.atlas(
+      TextureKeys.GoldPole,
+      "sprites/gold.png",
+      "sprites/gold.json"
+    )
   }
 
   create() {
@@ -23,6 +29,17 @@ export default class Preloader extends Phaser.Scene {
         start: 3,
         end: 9,
         prefix: "wood-",
+        suffix: ".png",
+      }),
+      frameRate: 12,
+      delay: 175,
+    })
+    this.anims.create({
+      key: AnimationKeys.GoldPole,
+      frames: this.anims.generateFrameNames(TextureKeys.GoldPole, {
+        start: 3,
+        end: 9,
+        prefix: "gold-",
         suffix: ".png",
       }),
       frameRate: 12,
